@@ -152,7 +152,7 @@ declarative pipeline code
 ## Jenkins Pipeline Syntax Example
 ```groovy
 node {
-stage(‘SCM checkout’) {
+stage(‘SCM Checkout’) {
 //Checkout from your SCM(Source Control Management)
 //For eg: Git Checkout
 }
@@ -172,5 +172,18 @@ stage(‘Deploy’) {
 }
 ```
 
+## Jenkinsfile
+Jenkins Pipeline can be defined by a text file called JenkinsFile. You can implement pipeline as code using JenkinsFile, and this can be defined by using a DSL (Domain Specific Language). With the help of JenkinsFile, you can write the steps required for running a Jenkins Pipeline.
+* **Pipeline:** This is the user-defined block, which contains all the processes such as build, test, deploy, etc. it is a group of all the stages in a JenkinsFile. All the stages and steps are defined in this block. It is used in declarative pipeline syntax.
+* **Stage:** This block contains a series of steps in a pipeline. i.e., build, test, and deploy processes all come together in a stage. Generally, a stage block visualizes the Jenkins pipeline process.
 
+## Jenkins Snippet Generator
+```
+Step 1: Create a pipeline job > configure
+Step 2: Select pipeline script from pipeline definition
+Step 3: Click on Pipeline syntax > snippet generator
+Step 4: Step > select Git > enter repo URL
+Step 5: Scroll down > Generate pipeline script
+Step 6: Copy the script into your pipeline script UI
+```
 
