@@ -50,6 +50,13 @@ The philosophies of modern development emphasize collaboration between different
 * **Continuous Deployment** automatically deploys all validated changes to production. Frequent feedback enables issues to be found and fixed quickly.
 * To successfully implement **continuous delivery**, it is essential to have a collaborative working relationship with everyone involved. You can then use Delivery Pipelines, which are automated implementations of your product’s lifecycle.
 
+![image](https://user-images.githubusercontent.com/84156957/132910774-acedcd9b-0717-4bfc-bf56-15b17eff4ecd.png)
+
+## Jenkins workflow
+Jenkins automatically performs all the activities required to deliver your software. You specify how to build and test your software as well as when, where, and how to deploy it using these guidelines:
+* Define a Jenkins Pipeline to run each activity in the same order every time.
+*  Pipeline is glue for the activities defined. Do not code build actions directly in the Pipeline! Instead, use shell scripts or a tool such as Apache Maven, Gradle, npm, Apache Ant, or make to define the specific actions required at each step and use the pipeline to define the execution order.
+* The pipeline runs each time the code is modified.
 
 
 
