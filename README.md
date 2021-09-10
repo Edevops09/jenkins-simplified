@@ -42,3 +42,14 @@ The philosophies of modern development emphasize collaboration between different
 * **DevOps** - extends the Agile philosophy into operations and production by advocating for the automation and monitoring of all steps in the development cycle.  
 * **Continuous** - implements Agile and Devops philosophies with tools that standardize the steps in the process and thoroughly test each code modification before it is integrated into the official source.
 
+![image](https://user-images.githubusercontent.com/84156957/132910108-025bbdaa-605c-46b7-989e-47fa04ddde98.png)
+
+## Continuous integration, delivery, and deployment
+* **Continuous Integration (CI)** is the frequent, automatic integration of code. All new and modified code is automatically tested with the master code.
+* **Continuous Delivery (CD)** is the natural extension of CI. It ensures that the code is always ready to be deployed, although manual approval is required to actually deploy the software to production.
+* **Continuous Deployment** automatically deploys all validated changes to production. Frequent feedback enables issues to be found and fixed quickly.
+
+To successfully implement continuous delivery, it is essential to have a collaborative working relationship with everyone involved. You can then use Delivery Pipelines, which are automated implementations of your product’s lifecycle.
+![image](https://user-images.githubusercontent.com/84156957/132910147-22b91a5a-22c9-488e-b49b-c20310cc5889.png)
+
+
