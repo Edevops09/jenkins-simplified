@@ -1,3 +1,23 @@
+## Table of Contents
+- [What is Jenkins?](#what-is-jenkins-)
+- [What is Continuous Integration?](#what-is-continuous-integration-)
+- [How does Jenkins work?](#how-does-jenkins-work-)
+- [Advantages of using Jenkins](#advantages-of-using-jenkins)
+- [Disadvantages of using Jenkins](#disadvantages-of-using-jenkins)
+- [Modern Development Philosophies](#modern-development-philosophies)
+- [Continuous Integration, Continous Delivery, and Deployment](#continuous-integration--continous-delivery--and-deployment)
+- [Jenkins Workflow](#jenkins-workflow)
+- [Jenkins Installation](#jenkins-installation)
+- [Different Types of Jenkins Jobs](#different-types-of-jenkins-jobs)
+- [Jenkins Pipeline](#jenkins-pipeline)
+- [Jenkins Pipeline Syntax Example](#jenkins-pipeline-syntax-example)
+- [Jenkinsfile](#jenkinsfile)
+- [Jenkins Snippet Generator](#jenkins-snippet-generator)
+- [Distributed Jenkins components](#distributed-jenkins-components)
+- [Jenkins Architecture](#jenkins-architecture)
+  * [Jenkins Master](#jenkins-master)
+  * [Jenkins Managed Nodes](#jenkins-managed-nodes)
+- [Continous Integration and Continous Delivery Summary](#continous-integration-and-continous-delivery-summary)
 
 
 ## What is Jenkins?
