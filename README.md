@@ -222,3 +222,21 @@ As we know Jenkins is developed using Java is platform independent thus Jenkins 
 
 ![jenkins-architecture2](https://user-images.githubusercontent.com/84156957/132950258-2eca0160-fa5a-41b4-b0d1-7612dd850327.png)
 
+## Continous Integration and Continous Delivery Summary
+* A CI/CD pipeline automates the process of software delivery.
+* CI/CD pipeline introduces automation and continuous monitoring throughout the lifecycle of a software product.
+* Continuous integration is a software development method where members of the team can integrate their work at least once a day.
+* Continuous delivery is a software engineering method in which a team develops software products in a short cycle.
+* Continuous deployment is a software engineering process in which product functionalities are delivered using automatic deployment.
+* There are four stages of a CI/CD pipeline 1) Source Stage, 2) Build Stage, 3) Test Stage, 4) Deploy Stage.
+* Important CI/CD tools are Jenkins, Bambo, and Circle CI.
+* CI/CD pipeline can improve reliability.
+* CI/CD pipeline makes IT team more attractive to developers.
+* Cycle time is the time taken to go from the build stage to production.
+* Development frequency allows you to analyze bottlenecks you find during automation.
+* Change Lead Time measures the start time of the development phase to deployment.
+* Change Failure Rate focuses on the number of times development get succeeds vs. the number of times it fails. 
+* MTTR (Mean Time to Recovery) is the amount of time required by your team to recover from failure.
+* MTTF (Mean Time to Failure) measures the amount of time between fixes and outages.
+	
+
