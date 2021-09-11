@@ -197,3 +197,28 @@ Step 6: Copy the script into your pipeline script UI
 	
 * **The agent** is the tool that manages the executors on a remote node, on behalf of Jenkins. They are actually small (170KB single jar) Java client processes that connect to a Jenkins controller and are assumed to be unreliable. An agent can use any operating system that supports Java. Tools required for builds and tests are installed on the node where the agent runs; they can be installed directly or in a container (Docker or Kubernetes). Each agent is effectively a process with its own PID (Process Identifier) on the host machine
 
+## Jenkins Architecture
+Jenkins follows Master-Slave architecture to manage distributed builds. In this architecture, slave and master communicate through TCP/IP protocol.
+Jenkins architecture has two components:
+* Jenkins Master/Server
+* Jenkins Slave/Node/Build Server
+
+![jenkins-architecture](https://user-images.githubusercontent.com/84156957/132950212-e67cf3f9-75d8-4f04-b97a-4e7498e4a90e.jpg)
+
+### Jenkins Master
+The main server of Jenkins is the Jenkins Master or Controller. It is a web dashboard which is nothing but powered from a war file. By default it runs on 8080 port. With the help of Dashboard, we can configure the jobs/projects but the build takes place in Nodes/Slave. By default one node (slave) is configured and running in Jenkins server. We can add more nodes using IP address, user name and password using the ssh, jnlp or webstart methods.
+
+The server's job or master's job is to handle:
+* Scheduling build jobs.
+* Dispatching builds to the nodes/slaves for the actual execution.
+* Monitor the nodes/slaves (possibly taking them online and offline as required).
+* Recording and presenting the build results.
+* A Master/Server instance of Jenkins can also execute build jobs directly.
+
+### Jenkins Managed Nodes
+Jenkins slave is used to execute the build jobs dispatched by the master. We can configure a project to always run on a particular slave machine, or particular type of slave machine, or simple let the Jenkins to pick the next available slave/node.
+
+As we know Jenkins is developed using Java is platform independent thus Jenkins Master/Servers and Slave/nodes can be configured in any servers including Linux, Windows, and Mac.
+
+![jenkins-architecture2](https://user-images.githubusercontent.com/84156957/132950258-2eca0160-fa5a-41b4-b0d1-7612dd850327.png)
+
