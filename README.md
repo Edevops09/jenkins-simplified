@@ -187,3 +187,13 @@ Step 5: Scroll down > Generate pipeline script
 Step 6: Copy the script into your pipeline script UI
 ```
 
+## Distributed Jenkins components
+* **The Jenkins controller** is the Jenkins service itself, which is a webserver that also acts as a "brain" for deciding how, when, and where to run tasks. 
+	• It is a webserver that also acts as a "brain" for deciding how, when and where to run tasks. Management tasks (configuration, authorization, and authentication) are executed on the controller, which serves HTTP requests. Files written when a Pipeline executes are written to the filesystem on the controller unless they are off-loaded to an artifact repository such as Nexus or Artifactory.
+	
+* **A node** is a server where Jenkins runs build jobs on executors. Note that the Jenkins controller also runs on a node. Nodes are the "machines" on which build agents run. Jenkins monitors each attached node for disk space, free temp space, free swap, clock time/sync and response time. A node is taken offline if any of these values go outside the configured threshold
+	
+* **An executor** is effectively a thread for execution of tasks. An executor is a slot for execution of tasks; effectively, it is a thread in the agent. The number of executors on a node defines the number of concurrent tasks that can be executed on that node at one time. In other words, the number of concurrent Pipeline stages that can execute on that node at one time.
+	
+* **The agent** is the tool that manages the executors on a remote node, on behalf of Jenkins. They are actually small (170KB single jar) Java client processes that connect to a Jenkins controller and are assumed to be unreliable. An agent can use any operating system that supports Java. Tools required for builds and tests are installed on the node where the agent runs; they can be installed directly or in a container (Docker or Kubernetes). Each agent is effectively a process with its own PID (Process Identifier) on the host machine
+
