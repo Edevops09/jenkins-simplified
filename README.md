@@ -156,6 +156,7 @@ Jenkinsfile is a text file that stores the pipeline
 as code. It is written using the Groovy DSL. It can be written based on two syntaxes:
 * **Scripted pipeline:** Code is written on the Jenkins UI
 instance and is enclosed within the node block.
+
 ```groovy
 node {  
     stage('Build') { 
@@ -171,6 +172,7 @@ node {
 ```
 * **Declarative pipeline:** Code is written locally in a file and is checked into a SCM and is enclosed within the
 pipeline block.
+
 ```groovy
 pipeline {
     agent any 
