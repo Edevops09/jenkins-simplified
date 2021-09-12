@@ -137,6 +137,11 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 /var/lib/jenkins
 ```
 
+**To get Jenkins Internal Available Variables**
+```
+http://localhost:8080/env-vars.html/
+```
+
 ## Different Types of Jenkins Jobs
 Jenkins provides the option of choosing from different types of jobs to build your project.
 * **Freestyle** - build jobs are general-purpose build jobs, which provides maximum flexibility. It can be used for any type of project.
