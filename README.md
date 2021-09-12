@@ -10,7 +10,6 @@
 - [Jenkins Installation](#jenkins-installation)
 - [Different Types of Jenkins Jobs](#different-types-of-jenkins-jobs)
 - [Jenkins Pipeline](#jenkins-pipeline)
-- [Jenkins Pipeline Syntax Example](#jenkins-pipeline-syntax-example)
 - [Jenkinsfile](#jenkinsfile)
 - [Jenkins Snippet Generator](#jenkins-snippet-generator)
 - [Distributed Jenkins components](#distributed-jenkins-components)
@@ -158,38 +157,40 @@ as code. It is written using the Groovy DSL. It can be written based on two synt
 * **Scripted pipeline:** Code is written on the Jenkins UI
 instance and is enclosed within the node block.
 ```groovy
-node {
-scripted pipeline code
+node {  
+    stage('Build') { 
+        // 
+    }
+    stage('Test') { 
+        // 
+    }
+    stage('Deploy') { 
+        // 
+    }
 }
 ```
 * **Declarative pipeline:** Code is written locally in a file and is checked into a SCM and is enclosed within the
 pipeline block.
 ```groovy
-node {
-declarative pipeline code
-}
-```
-
-## Jenkins Pipeline Syntax Example
-```groovy
-node {
-stage(‘SCM Checkout’) {
-//Checkout from your SCM(Source Control Management)
-//For eg: Git Checkout
-}
-stage(‘Build’) {
-//Compile code
-//Install dependencies
-//Perform Unit Test, Integration Test
-}
-stage(‘Test’) {
-//Resolve test server dependencies
-//Perform UAT
-}
-stage(‘Deploy’) {
-//Deploy code to prod server
-//Solve dependency issues
-}
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                // 
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+    }
 }
 ```
 
