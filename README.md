@@ -43,11 +43,12 @@ Automation testing framework (Selenium, Appium, TestComplete, UFT, and others)
 ```
 
 ## Advantages of using Jenkins
-* Jenkins is being managed by the community which is very open. Every month, they hold public meetings and take inputs from the public for the development of Jenkins project.
-* So far around 280 tickets are closed, and the project publishes stable release every three months.
-As technology grows, so does Jenkins. So far Jenkins has around 320 plugins published in its plugins database. With plugins, Jenkins becomes even more powerful and feature rich.
-* Jenkins tool also supports cloud-based architecture so that you can deploy Jenkins in cloud-based platforms.
-The reason why Jenkins became popular is that it was created by a developer for developers.
+* It is an open-source tool with great community support.
+* It is easy to install, configure, extend, and modify. 
+* It allows the instant generation of tests and building, automation, and deployment of code on different platforms.
+* It has 1000+ plugins to ease your work. If a plugin does not exist, you can code it and share it with the community.
+* It helps in detecting errors very early, thus saving developers a lot of time and hard work.
+* It is built with Java and hence, it is portable to all the major platforms.
 
 ## Disadvantages of using Jenkins
 * Though Jenkins is a very powerful tool, it has its flaws.
