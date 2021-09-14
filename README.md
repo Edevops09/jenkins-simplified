@@ -137,6 +137,11 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 /var/lib/jenkins
 ```
 
+**To get Jenkins Built-in Global Variables**
+```
+http://178.128.156.158:8080/pipeline-syntax/globals#env
+```
+
 **To get Jenkins Internal Available Variables**
 ```
 http://localhost:8080/env-vars.html/
